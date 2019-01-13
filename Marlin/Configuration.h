@@ -616,7 +616,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 78.59, 78.59, 1561.74, 330 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.63, 80.63, 1621.14, 1621.14 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1339,8 +1339,8 @@
   #define NOZZLE_CLEAN_TRIANGLES  3
 
   // Specify positions as { X, Y, Z }
-  #define NOZZLE_CLEAN_START_POINT { 30, 30, (Z_MIN_POS + 1)}
-  #define NOZZLE_CLEAN_END_POINT   {100, 60, (Z_MIN_POS + 1)}
+  #define NOZZLE_CLEAN_START_POINT { 30, 30, Z_MIN_POS}
+  #define NOZZLE_CLEAN_END_POINT   {100, 60, Z_MIN_POS}
 
   // Circular pattern radius
   #define NOZZLE_CLEAN_CIRCLE_RADIUS 6.5
