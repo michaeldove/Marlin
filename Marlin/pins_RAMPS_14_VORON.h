@@ -29,7 +29,7 @@
 // Include the base configuration for RAMPs 1.4
 #include "pins_RAMPS.h"
 
-#define CONTROLLER_FAN_PIN  8 // Changed to -1 since hooked to always on.
+#define CONTROLLER_FAN_PIN  4 // Changed to -1 since hooked to always on.
  							 // LED strip can be attached to the same output. This way LEDs are only on during printing, and shortly afteR
 //#define USE_CONTROLLER_FAN true
 
