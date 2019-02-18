@@ -53,6 +53,8 @@
 // LCD
 #define BEEPER_PIN 		 -1   // Disable Beeper Pin
 
+#define CASE_LIGHT_PIN 1
+
 // Software SPI
 //#define TMC_SW_MOSI       63
 //#define TMC_SW_MISO       59
