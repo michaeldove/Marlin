@@ -447,9 +447,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 150.52
-  #define DEFAULT_bedKi 12.25
-  #define DEFAULT_bedKd 462.40
+  #define DEFAULT_bedKp 74.48
+  #define DEFAULT_bedKi 3.29
+  #define DEFAULT_bedKd 426.12
 #endif // PIDTEMPBED
 
 // @section extruder
