@@ -447,9 +447,9 @@
   //#define DEFAULT_bedKd 1675.16
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
-  #define DEFAULT_bedKp 74.48
-  #define DEFAULT_bedKi 3.29
-  #define DEFAULT_bedKd 426.12
+  #define DEFAULT_bedKp 98.91
+  #define DEFAULT_bedKi 4.51
+  #define DEFAULT_bedKd 542.87
 #endif // PIDTEMPBED
 
 // @section extruder
@@ -616,7 +616,7 @@
  * Override with M92
  *                                      X, Y, Z, E0 [, E1[, E2[, E3[, E4]]]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.63, 80.63, 300, 300 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.63, 80.63, 1621.14, 830, 300 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -786,13 +786,13 @@
  */
 #define X_PROBE_OFFSET_FROM_EXTRUDER 22  // X offset: -left  +right  [of the nozzle]
 #define Y_PROBE_OFFSET_FROM_EXTRUDER -13  // Y offset: -front +behind [the nozzle]
-#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.52   // Z offset: -below +above  [the nozzle]
+#define Z_PROBE_OFFSET_FROM_EXTRUDER -1.24   // Z offset: -below +above  [the nozzle]
 
 // Certain types of probes need to stay away from edges
 #define MIN_PROBE_EDGE 10
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 8000
+#define XY_PROBE_SPEED 4000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
@@ -886,16 +886,16 @@
 
 // @section machine
 
-// The size of the print bed
-#define X_BED_SIZE 290
-#define Y_BED_SIZE 240
+// The size of the print bed 229x
+#define X_BED_SIZE 277//290
+#define Y_BED_SIZE 240//290
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -28
-#define Y_MIN_POS 0
+#define Y_MIN_POS -25 // binder clips and screws
 #define Z_MIN_POS 0
-#define X_MAX_POS X_BED_SIZE
-#define Y_MAX_POS Y_BED_SIZE
+#define X_MAX_POS 277 //X_BED_SIZE - 10 //probe off glass
+#define Y_MAX_POS 240 //Y_BED_SIZE - 25 // binder clips and screws
 #define Z_MAX_POS 190
 
 /**
